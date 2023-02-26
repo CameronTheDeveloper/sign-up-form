@@ -34,7 +34,6 @@ a{
 }
 
 .logo{
-    
     margin-top: 100px;  
     width: 100%;
     position: relative;
@@ -50,25 +49,32 @@ a{
     z-index: 100;
 }
 
-.logo img{
-    opacity: .7;
-    margin: auto;
+/*
+.logo-words img{
+    margin: 0 10px; 
     top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
     height: auto;
-    width: 100px;
+    width: clamp(1px, 4vw, 200px);
     z-index: 45;
 }
+*/
 
 .logo-words{
+    
+    display: inline-block;
     font-family: 'Orbitron',sans-serif;
-    margin-left: 120px;
     color: rgb(0, 0, 0);
-    word-spacing: 120px;
-    font-weight: 900;
+    font-size: clamp(3rem, 12vw, 5rem);
+   
+    text-align: center;
+    position: relative;
+    
+    z-index: 50;
 }
+
 
 .form-side{
     align-items: center;
@@ -96,14 +102,9 @@ a{
     text-shadow: -.5px -.5px 0 rgb(0, 0, 0), .5px -.5px 0 rgb(0, 0, 0), -.5px .5px 0 rgb(0, 0, 0), .5px .5px 0 rgb(0, 0, 0);
     background-color: rgb(20, 16, 71);
     font-family:'Times New Roman', Times, serif;
-   
     list-style: none;
     color: rgb(255, 255, 255);
-   
-   
-  
     border-radius: 5px;
-    
 }
 
 #form li{
