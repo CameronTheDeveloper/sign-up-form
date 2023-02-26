@@ -1,35 +1,30 @@
 body{
     font-family: 'Times New Roman', Times, serif; 
     margin: 0;
+    height: 100%;
 }
 
 .container, .photo-side, .form-side, .logo-back, .footer{
     display: flex;
 }
 
+
 .container{
     max-width: 100%;
+    height: 100%;
 }
 
 .photo-side{
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     width: 55%;
     background-image: url('images/stars.jpeg');
 }
 
-.form-side{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(58, 32, 99);
-}
 
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     color: whitesmoke;
 }
@@ -75,10 +70,31 @@ a{
     font-weight: 900;
 }
 
-.form-side .description{
-    font-family: 'Orbitron',sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    text-shadow: -1px -1px 0 rgb(7, 73, 255), 1px -1px 0 rgb(7, 111, 255), -1px 1px 0 rgb(7, 111, 255), 1px 1px 0 rgb(7, 111, 255);
+.form-side{
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(58, 32, 99);
+}
+
+
+.form-description{
     
+    width: 750px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-family: 'Orbitron',sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    text-shadow: -.5px -.5px 0 rgb(7, 73, 255), .5px -.5px 0 rgb(7, 111, 255), -.5px .5px 0 rgb(7, 111, 255), .5px .5px 0 rgb(7, 111, 255);
+}
+
+#form input[type="text"]{
+    display: block;
+    font-size: 16px;
+    border: 1px solid orangered;
+  
 }
