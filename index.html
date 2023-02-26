@@ -37,19 +37,19 @@
                 <ul id="form">
                     <li>
                         <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name" placeholder="Cameron">
+                        <input type="text" id="first_name" name="first_name" placeholder="Cameron" maxlength="30" required>
                     </li>
                     <li>
                         <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name" placeholder="Posey">
+                        <input type="text" id="last_name" name="last_name" placeholder="Posey" maxlength="30" required>
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="email@yahoo.com">
+                        <input type="email" id="email" name="email" placeholder="email@yahoo.com" maxlength="35" required>
                     </li>
                     <li>
                         <label for="phone_num">Phone Number</label>
-                        <input type="tel" id="phone_num" name="phone_num" placeholder="(123) 456-7890">
+                        <input type="tel" id="phone_num" name="phone_num" placeholder="(123) 456-7890" pattern="^\(\d{3}\) \d{3}-\d{4}$" maxlength="17" title="*Please enter a valid phone number" required>
                     </li>
                     <li>
                         <button type="submit">Submit Application</button>

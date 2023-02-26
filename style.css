@@ -87,14 +87,19 @@ a{
     margin-top: 16px;
     font-family: 'Orbitron',sans-serif;
     font-size: clamp(.5rem, 3vw, 3rem);
-    font-weight: 800;
-    text-shadow: -.5px -.5px 0 rgb(7, 73, 255), .5px -.5px 0 rgb(7, 111, 255), -.5px .5px 0 rgb(7, 111, 255), .5px .5px 0 rgb(7, 111, 255);
+    font-weight: 900;
+    text-shadow: -.5px -.5px 0 rgb(90, 140, 242), .5px -.5px 0 rgb(90, 140, 242), -.5px .5px 0 rgb(7, 111, 255), .5px .5px 0 rgb(7, 111, 255);
 }
 
 #form{
+    padding: 22px;
+    text-shadow: -.5px -.5px 0 rgb(0, 0, 0), .5px -.5px 0 rgb(0, 0, 0), -.5px .5px 0 rgb(0, 0, 0), .5px .5px 0 rgb(0, 0, 0);
+    background-color: rgb(20, 16, 71);
+    font-family:'Times New Roman', Times, serif;
+   
     list-style: none;
-    color: white;
-    
+    color: rgb(255, 255, 255);
+   
    
   
     border-radius: 5px;
@@ -106,19 +111,39 @@ a{
 }
 
 #form label{
+    font-size: 35px;
     display: block;
     margin-bottom: 5px;
 }
 
 #form input[type="text"],
+#form input[type="email"],
 #form input[type="tel"]{
+    font-family:'Times New Roman', Times, serif;
     display: block;
-    font-size: 16px;
+    font-size: 24px;
     width: 100%;
+    height: 25px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 25px;
+    font-size: 16px;
 }
 
 input:hover, input:focus,
 button:hover{
-    border-width: 2px;
-    border-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 10px;
+    
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 2px solid red;
 }
