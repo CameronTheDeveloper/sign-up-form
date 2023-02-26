@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-.container, .photo-side, .form-side, .footer{
+.container, .photo-side, .form-side, .logo-back, .footer{
     display: flex;
 }
 
@@ -36,14 +36,16 @@ a{
 }
 
 .logo{
+    
     margin-top: 100px;  
     width: 100%;
     position: relative;
 }
 
 .logo-back{
-    
-    
+    flex-direction: column;
+    justify-content: center;
+    font-size: 64px;
     background-color: rgb(255, 255, 255);
     height: 150px;
     opacity: .2;
@@ -55,9 +57,17 @@ a{
     margin: auto;
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
     position: absolute;
     height: auto;
     width: 100px;
     z-index: 45;
+}
+
+.logo-words{
+    font-family: 'Orbitron',sans-serif;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    word-spacing: 120px;
+    font-weight: 900;
 }
