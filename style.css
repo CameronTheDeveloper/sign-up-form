@@ -80,21 +80,38 @@ a{
 
 
 .form-description{
-    
     width: 750px;
     flex-direction: column;
     display: flex;
     align-items: center;
     margin-top: 16px;
     font-family: 'Orbitron',sans-serif;
-    font-size: 48px;
+    font-size: clamp(.5rem, 3vw, 3rem);
     font-weight: 800;
     text-shadow: -.5px -.5px 0 rgb(7, 73, 255), .5px -.5px 0 rgb(7, 111, 255), -.5px .5px 0 rgb(7, 111, 255), .5px .5px 0 rgb(7, 111, 255);
 }
 
-#form input[type="text"]{
+#form{
+    list-style: none;
+    color: white;
+    
+   
+  
+    border-radius: 5px;
+}
+
+#form li{
+    margin-bottom: 10px;
+}
+
+#form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form input[type="text"],
+#form input[type="tel"]{
     display: block;
     font-size: 16px;
-    border: 1px solid orangered;
-  
+    width: 100%;
 }
